@@ -1,0 +1,286 @@
+.content_1{
+
+    
+    background-image: url(../images/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 550px;
+    
+}
+
+#text_1 {
+    font-family: Tommy;
+    
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    
+}
+
+.content_1 a{
+    font-family: Tommy;
+    color: white;
+    width: auto;
+    display: flex;
+    text-decoration: none;
+    margin-top: 80px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+   
+    border-radius: 10px;
+    justify-content: center;
+    background-color: coral;
+
+    
+}
+
+.content_1 a:hover{
+    color: #000000;
+    box-shadow: 10px 10px 30px rgba(33,33,33,.2); 
+}
+
+
+.content_2{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 10px solid coral;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+
+}
+.content_2 section{
+    width: 1500px;
+}
+
+
+.content_2 section>p{
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+    
+    font-family: Tommy_Regular;
+    color: rgb(19, 18, 18);
+    font-size: 30px;
+
+}
+
+.content_2 aside{
+
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border:5px solid coral;
+    background-color: rgb(96, 96, 105);
+    text-align: center;
+    right: 0px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+    
+    
+
+}
+.content_2 aside>h4{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: Tommy_Regular;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(20, 20, 20);
+    
+    
+}
+
+.content_2 aside>a{
+
+    align-items: center;
+    font-family: Tommy_Regular;
+    text-decoration: none;
+    color: black;
+    text-decoration:underline;
+    
+    
+}
+
+.content_2 aside a:hover{
+
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+@media screen and(max-width:1000px){
+
+    .content_2 aside{
+
+        width: 700px;
+        background-color: rgb(96, 96, 105);
+        text-align: center;
+        right: 0px;
+    
+    }
+    .content_2 section{
+        width: 700px;
+    
+    }
+    .content_2 section>p{
+        font-size: 30px;
+    }    
+
+    
+}
+
+
+.content_3{
+    
+
+    background-image: url(../images/baptiste_ride.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    
+}
+
+.content_3 a{
+    
+    text-decoration: none;
+}
+
+.link_activitie a,h1{
+    
+    font-family: Tommy;
+    
+    text-align: center;
+    padding: 50px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.link_activitie h1:hover{
+    text-decoration: underline;
+}
+
+
+
+
+#pp{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 20px;
+    
+    border: 5px solid white;
+}
+
+
+.content_3 a > img:hover{
+    box-shadow: 2px 2px 30px rgba(33,33,33,.2); 
+}
+
+.content_3 p{
+    display: flex;
+    flex-flow: column wrap;
+    color: #ffffff;
+    margin: 20px;
+    font-family: Tommy_Regular;
+    
+    
+}
+
+.content_entre{
+    border-top: 10px solid coral;
+    border-bottom: 10px solid coral;
+    width: 100%;
+    
+    background-color: #ffffff;
+}
+
+.content_entre p{
+    font-family: Tommy_Regular;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+    margin: 40px;
+    color: rgb(19, 18, 18);
+    font-size: 30px;
+    
+
+}
+
+
+
+.content_entre_deux{
+
+    background-image: url(../images/baptiste_ride_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    
+    
+}
+
+.content_entre_deux a{
+    text-decoration: none;
+}
+
+
+.content_entre_deux a > img:hover{
+    box-shadow: 2px 2px 30px rgba(33,33,33,.2); 
+}
+
+.content_entre_deux p{
+    display: flex;
+    flex-flow: column wrap;
+    color: #ffffff;
+    margin: 20px;
+    font-family: Tommy_Regular;}
+
+
+.last_content{
+    background-image: url(../images/baptiste_ride_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+.last_content a> img:hover{
+    box-shadow: 2px 2px 30px rgba(33,33,33,.2); 
+}
+
+.last_content a{
+    text-decoration: none;
+}
+
+.last_content p{
+    display: flex;
+    flex-flow: column wrap;
+    color: #ffffff;
+    margin: 20px;
+    font-family: Tommy_Regular;}
+
+
+

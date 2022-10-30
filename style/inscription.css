@@ -1,0 +1,118 @@
+
+.Text_1{
+
+    width: 100%;
+    text-align: center;
+    background-image: url(../images/road.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+}
+
+.Text_1 h1{
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: Tommy;
+    font-size: 30px;
+    border-bottom: 10px solid coral;
+}
+
+
+.form{
+    display: flex;
+    margin: 10%;
+    margin-top: 5%;
+    justify-content: center;
+    
+    
+    width: 80%;
+    background-color: rgb(92, 80, 80);
+    border-radius: 10px;
+    border-bottom: 10px solid coral;
+    border-top: 10px solid coral;
+    flex-flow:  wrap;
+}
+
+.form_left {
+
+    width: 200px;
+    background-color: rgb(34, 37, 36);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin: 25px;
+    border-radius: 5px;
+    
+}
+
+
+.form_left label{
+    color: #ffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 2%;
+    display: flex;
+      
+}
+
+.form_left input{
+
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 180px;
+    margin-left: 2px;
+    margin-right: 2px ;
+    initial-value: "nom";
+    
+      
+}
+
+.form_left
+
+.form_right{
+
+    width: 200px;
+
+}
+
+
+.response{
+
+    width: 80%;
+    margin-left:10% ;
+    margin-right:10% ;
+    min-height: 300px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    background-color: rgb(114, 119, 114);
+    border-radius: 10px;
+    border-top: 10px solid coral;
+    border-bottom: 10px solid coral;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
+}
+
+.response h3{
+
+
+    font-family: Tommy_Regular;
+
+}
+
+.response p{
+    display: block;
+    text-align: center;
+    margin: 10px;
+    font-family: Tommy_Regular;
+}
+
+

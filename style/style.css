@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+   /* box-sizing: border-box;*/
+}
+
+
+
+
+body{background-color: rgb(255, 255, 255);}
+
+
+
+@font-face {
+    font-family: Tommy;
+    src: url(../fonts/TOMMY.otf);
+    
+}
+@font-face {
+    font-family: Tommy_Regular;
+    src: url(../fonts/TOMMYRegular.otf);
+}
+
+
+.content_4{
+    background-color: #ffffff;
+    width: 100%;
+    height: 170px;}
+
+
+
+
+
+
+.bottom_left{
+    
+    background-color: #ffffff;
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+.bottom_left img{
+
+    margin: 20px;
+    margin-left: 30%;
+    margin-top: 45px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+}
+
+.bottom_left p{
+    text-align: center;
+    margin: 20px;
+    margin-top: 40px;
+    font-size: 12px;
+    text-justify: inter-word;
+    font-family: Tommy_Regular;
+}
+
+
+.bottom_right{
+
+    background-color: #ffffff;
+    width: 50%;
+    display: block;
+    float: right;
+}
+
+.bottom_right p{
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: underline;
+    font-family: Tommy_Regular;
+}
+
+
+.bottom_right a{
+    
+    display: flex;
+    flex-flow: column wrap;
+    margin: 5px;
+    
+    text-align: center;
+    font-size: 12px;
+    text-decoration: underline;
+    font-family: Tommy_Regular;
+
+}
+
+/* avant footer de page utilisé sur parcours et s'inscrire !*/
+.bf_footer{
+
+
+    background-image: url(../images/bg_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    border-top: 10px solid coral;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+.bf_footer h3{
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    font-family: Tommy;
+    color: #ffffff;
+    font-size: 25px;
+}
+

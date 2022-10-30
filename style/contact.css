@@ -1,0 +1,116 @@
+.title_contact{
+    width: 100%;
+    border-bottom: 10px solid coral;
+    background-image: url(../images/bg_contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.title_contact h1{
+
+
+    padding-top: 150px;
+    text-align: center;
+    font-family: Tommy;
+    padding-bottom: 150px;
+    color: black;
+}
+
+
+h2{ 
+    width: auto;
+    margin-top: 25px;
+    
+    font-family: Tommy_Regular;
+    text-align: center;
+}
+
+
+.form_contact{
+    
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    
+    
+    
+}
+
+.form_contact form{
+
+    
+    border: 4px solid coral;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+.form_contact label,input,select, textarea, legend{
+    font-size: 18px;
+    
+    justify-content: center;
+    align-items: center;
+    font-family: Tommy_Regular;
+    margin-bottom: 15px;
+    
+}
+
+.form_contact option{
+
+    font-size: 15px;
+}
+.form_contact input{
+
+    border-radius: 5px ;
+
+}
+
+.form_contact textarea {
+
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+.form_contact #OuiFirst{
+
+    margin-left: 20px;
+}
+
+.form_contact p{
+
+    font-family: Tommy_Regular;
+    text-decoration: underline;
+}
+
+@media screen  and (max-width:1000px){
+
+    .form_contact form{
+
+        width: 90%;
+        text-align: center;
+    }
+    
+        
+    
+}
+#rep{
+
+    margin-top:50px ;
+    text-align: center;
+    font-family: Tommy_Regular;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.reponse p,h3{
+
+    text-align: center;
+    font-family: Tommy_Regular;
+}
+
+.reponse{
+
+    margin-bottom: 50px;
+}
