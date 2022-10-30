@@ -60,7 +60,7 @@
 
     
 
-     if ($prenom ==NULL || $prenom ==""){
+     if (ctype_space($prenom)){
         echo"<h1>Erreur ! Veuillez Remplir Le Champ <b>Prénom<b> Obligatoires</h1></div>";
         
         echo'
@@ -117,7 +117,7 @@
         ';//fin de l'echo
         }
 
-        else if ($mail ==NULL|| $mail ==""){
+        else if (ctype_space($mail)){
             echo"<h1>Erreur ! Veuillez Remplir Le Champ <b>mail<b> Obligatoires</h1></div>";
             
             echo'
@@ -172,7 +172,7 @@
             }
 
 
-            else if ($nom ==NULL || $nom==""){
+            else if (ctype_space($nom)){
                 echo"<h1>Erreur ! Veuillez Remplir Le Champ <b>nom<b> Obligatoires</h1></div>";
                 
                 echo'
@@ -238,7 +238,7 @@
                 ';//fin de l'echo
                 } 
         
-        else if ($msg==NULL || $msg==""){
+        else if (ctype_space($msg)){
             echo"<h1>Erreur ! Veuillez Remplir Le Champ <b>Message<b> Obligatoires</h1></div>";
                
 
@@ -292,9 +292,68 @@
           </form> 
           </div>';//fin de l'echo
         }
-    else{
+    else if(var_dump(filter_var($POST['mail']), FILTER_VALIDATE_EMAIL)){
 
-        echo('</div><h2 id="rep">Réponse Bien Transmise !<br>Nous Vous Recontacterons par mail !</h2>');
+      echo"<h1>Erreur ! Veuillez Remplir Une Adresse Mail Valable ! Obligatoires</h1></div>";
+               
+
+    echo'
+    <div class="form_contact">
+        <form action="../php/contact.php" method="post">
+
+        <label for="name">Nom* :</label>
+        <input type="text" name="name" id="name" required><br>
+  
+        <label for="prenom">Prénom* : </label>
+        <input type="text" name="prenom" id="prenom" required><br>
+  
+        <label for="tel">Téléphone :</label>
+        <input type="tel" name="tel" id="tel"><br>
+  
+        <label for="mail">Adresse Mail* :</label>
+        <input type="email" name="mail" id="mail"><br>
+  
+        <label for="reason">Raison Du Contact : </label>
+        <select name="reason" size="1">
+        <option>Besoin D\'aide
+        <option>Devenir Certifié
+        <option>Autre
+        </select><br>
+  
+        <label for="horaire">Jour et Horaire :</label>
+        <input name="horaire" id="horaire" type="datetime-local"><br>
+       
+        <div>
+          
+            <legend>S\'agit t\'il de votre premier contact avec nous ?</legend>
+        
+            <div>
+              <input type="radio" id="OuiFirst" name="OuiFirst" value="OuiFirst">
+              <label for="OuiFirst">Oui</label>
+            </div>
+        
+        </div>
+        <br>
+  
+        <label for="msg">Message* :</label><br>
+        <textarea id="msg" name="msg" placeholder="Ecrivez La Raison de Votre Contact." rows="5" cols="33" required>
+        </textarea><br>
+  
+        <input type="reset" value="Effacer"/>
+        <input type="submit" value="Envoyer"/>
+  
+        
+        <p>Les Champs Contenant des étoiles* sont obligatoires !</p>
+      </form> 
+      </div>';//fin de l'echo
+    }
+      
+
+        
+
+        
+   else {
+    echo('</div><h2 id="rep">Réponse Bien Transmise !<br>Nous Vous Recontacterons par mail !</h2>');
 
         echo("<div class=\"reponse\"><h3>Récapitulatif :</h3>");
 
@@ -304,9 +363,9 @@
             echo 'Raison : ',$raison;
         }
         
-        echo'<p>Adresse : ',$mail,'<br>Votre Message : ',$msg,"</p></div>";
-        
-   }//fin else
+        echo'<p>Adresse : ',$mail,'<br>Votre Message : ',$msg,"</p></div>";}
+      
+   
 ?>
 
 <div class="bf_footer">
